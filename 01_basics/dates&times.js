@@ -27,4 +27,4 @@ console.log(myDate.getMonth()  + 1);  //IT WILL GIVE US CURRENT MONTH
 let newDate = new Date()
 console.log(newDate.toLocaleString('default',{
     weekday: "long"
-}));            // CAN CUSTOMIZE DATE AND TIME
+}));            // CAN CUSTOMIZE DATE AND TIME ACCORDINGLY
