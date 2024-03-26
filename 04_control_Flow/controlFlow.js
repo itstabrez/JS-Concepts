@@ -11,7 +11,7 @@ val1 = null ?? 15;
 
 val1 = null ?? 15 ?? 18;
 
-let var2 = undefined ?? 14;
+let var2 = undefined ?? 14;                 //THIS OPERATOR IS USED TO PUT VARIABLE IN VAR2 EITHER BOTH OF THEM WHICH IS AVAILABLE
 
 
 console.log(val1);
