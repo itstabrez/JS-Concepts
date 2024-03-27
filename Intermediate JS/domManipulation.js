@@ -34,8 +34,8 @@
 
 //--------------------------------QUERY SELECTOR ALL---------------------------------------
 
-// document.querySelectorAll("h1")             //Will Select all headlines
-// h1[0].style.color="red"                  //Will change color of all headlines to red
+// document.querySelectorAll("h1")             //Will Select all headings
+// h1[0].style.color="red"                  //Will change color of all headings to red
 
 
 // const mySelector = document.querySelectorAll("h1")

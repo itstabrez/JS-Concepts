@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: rgb(67, 66, 66); color: white;">
+    <div class="parent">
+        <div class="day">SUNDAY</div>
+        <div class="day">MONDAY</div>
+        <div class="day">TUESDAY</div>
+        <div class="day">WEDNESDAY</div>
+    </div>
+    
+</body>
+<script>
+    const parent = document.querySelector(".parent")
+    // console.log(parent);
+    // console.log(parent.children[2].innerHTML);
+
+    for (let index = 0; index < parent.children.length; index++) {          //USING FOR LOOP TO TRAVERSE IN HTML COLLECTION
+        console.log(parent.children[index].innerHTML);
+    }
+    parent.children[1].style.color="red";
+
+    // console.log(parent.firstElementChild);       //TARGETING CHILDREN FROM PARENT ELEMENT
+    // console.log(parent.lastElementChild);
+
+    const children = document.querySelector(".day");
+    console.log(children);                      
+    // console.log(children.parentElement);        //TARGETING PARENT FROM CHILDREN ELEMENT
+    // console.log(children.nextElementSibling);   //TARGETING NEXT SIBLING CHILDREN FROM CHILDREN ELEMENT
+    console.log("NODES: ", parent.childNodes);   //TARGETING NEXT SIBLING CHILDREN FROM CHILDREN ELEMENT
+
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating New Elements</title>
+</head>
+<body style="background-color: rgb(66, 64, 61); color: rgb(30, 255, 0);">
+    
+</body>
+<script>
+    const div = document.createElement("div")       
+    console.log(div);
+    div.className="class-room"
+    div.id=Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", "Generated Title")
+    div.style.backgroundColor="Purple";
+    div.style.padding="10px";
+    // div.innerText="I'm creating a new element"           //CAN BE USED BUT BELOW CODE DO THE SAME WORK SO WE CAN USE THAT TOO
+    const addText = document.createTextNode("Creating a Text node to add in new created elements")
+    div.appendChild(addText);
+
+    document.body.appendChild(div);
+
+</script>
+</html>
