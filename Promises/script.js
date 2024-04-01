@@ -101,11 +101,11 @@ consumePromiseFive();
 
 // getAllUsers();
 
-fetch('https://jsonplaceholder.typicode.com/users')
-.then((response) => {
-    return response.json();
+fetch('https://jsonplaceholder.typicode.com/users')             
+.then((response) => {                       //TAKE AN ARGUMENT WE NAME IT AS RESPONSE OFTEN
+    return response.json();                    
 })
-.then((data) => {
+.then((data) => {                           
     console.log(data);
 })
 .catch(() => {
