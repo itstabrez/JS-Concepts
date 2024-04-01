@@ -17,36 +17,36 @@ promiseOne.then(() => {
 
 //--------------------------------------Promise Two-------------------
 
-new Promise((resolve, reject) => {         //Promise Take Function as an argument
-    setTimeout(() => {
-        console.log("Async Task 2");
+new Promise((resolve, reject) => {         //Promise Take two Function as an argument resolve and reject 
+    setTimeout(() => {          
+        console.log("Async Task 2");            
         resolve();
     }, 1000)
 }).then(() => {                             //.then also take a function as an argument
-    console.log("Async is resolved");
+    console.log("Async is resolved");       //WE CAN DIRECTLY ATTACH .then after closing paranthesess of promise
 });
 
 //--------------------------------------Promise Three-------------------
 
 const promiseThird = new Promise((resolve, reject) => {
     setTimeout(() => {                      //Set Time Out Also Take a Function as an argument and yes we can define function outside timeOut and pass refrence of function as argument
-        resolve({ username: "Tabrez", Email: "tabrezamrath@gmail.com" })
+        resolve({ username: "Tabrez", Email: "tabrezamrath@gmail.com" })        //WE CAN ALSO PASS ARGUMENTS IN RESOLVE
     }, 1000)
 })
 
 promiseThird.then((user) => {
-    console.log(user);
+    console.log(user);                          //HERE WE TOOK USER refrence in function which is already passed as an argument by resolve function
 })
 
 //-------------------------------------Promise four-------------------
 
-const promiseFour = new Promise((resolve, reject) => {
+const promiseFour = new Promise((resolve, reject) => {      
     setTimeout(() => {
         let error = true;
-        if (!error) {
+        if (!error) {                       
             resolve({ username: "Tabrez Alam", Password: 123 });
         } else {
-            reject("Error ! Something Went Wrong")
+            reject("Error ! Something Went Wrong")              //WE can .then and .catch directly instead of resolve and reject function
         }
     }, 1000)
 })
@@ -54,20 +54,21 @@ const promiseFour = new Promise((resolve, reject) => {
 const userName = promiseFour
     .then((user) => {
         console.log(user);
-        return user.username;
+        return user.username;           //this return will be utilized by nested .then function
     })
     .then((username) => {
-        console.log(username);
+        console.log(username);              // we can print username which we returned in parent .then
     })
-    .catch((error) => {
+    .catch((error) => {             
         console.log(error);
-    }).finally(() => console.log("The Promise is Either Resolved or rejected"))
+    })
+    .finally(() => console.log("The Promise is Either Resolved or rejected"))       //THIS WILL ALWAYS PRINT EITHER PROMISE IS RESOLVED OR REJECTED
 
 //-------------------------------------Promise Five-------------------
 
 const promiseFive = new Promise((resolve, reject) => {
     setTimeout(() => {
-        let error = true;
+        let error = false;
         if (!error) {
             resolve({ username: "JS USER", Password: 888 });
         } else {
@@ -76,7 +77,7 @@ const promiseFive = new Promise((resolve, reject) => {
     }, 1000)
 });
 
-async function consumePromiseFive() {
+async function consumePromiseFive() {       //async functions can alse do the job of .then and .catch
     try {
         const response = await promiseFive;
         console.log(response);
@@ -92,7 +93,7 @@ consumePromiseFive();
 // async function getAllUsers() {
 //     try {
 //         const response = await fetch(url);
-//         const data = await response.json();
+//         const data = await response.json();          //converting data in JSON format also takes time so we must have to use await here too
 //         console.log(data);
 //     } catch (error) {
 //         console.log('E:', error);
