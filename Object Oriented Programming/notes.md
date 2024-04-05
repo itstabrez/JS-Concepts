@@ -6,6 +6,7 @@
 
 -Colletion Of properties and methods
 -toLowerCase 
+-toUpperCase
 
 ## Why use OOP
 
