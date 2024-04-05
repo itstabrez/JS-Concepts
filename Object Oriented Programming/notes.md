@@ -6,11 +6,12 @@
 
 -Colletion Of properties and methods
 -toLowerCase 
+-toUpperCase
 
 ## Why use OOP
 
 ## Parts of OOP
-Object Literal  
+Object Literals
 
 -Constructor Functions
 -ProtoType
