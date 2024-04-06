@@ -30,19 +30,22 @@
 
         const myFunc = createFunc();
         myFunc();
+        
+        // ----------------- REAL USE CASE OF CLOSURE AND LEXICAL SCOPING
 
         // document.getElementById("orange").onclick  = function(){
         //     document.body.style.backgroundColor = "orange";
         // }
         // document.getElementById("green").onclick  = function(){
-        //     document.body.style.backgroundColor = "green";
+        //     document.body.style.backgroundColor = "green";           //-------IF WE HAVE TO MAKE 100 BUTTONS SO WE HAVE TO REPEAT THIS CODES
         // }
+
 
         function clickHandler(color){
             // document.body.style.backgroundColor = `${color}`;
             return function (){
-                document.body.style.backgroundColor = `${color}`
-            }
+                document.body.style.backgroundColor = `${color}`    //SO WE BASICALLY KNOW THAT RETURNING A CHILD FUNCTION WILL RETURN LEXICAL SCOPE OF PARENT FUNCTION TOO        
+            }                                                       //THAT'S WHY HERE COLOR CAN BE ACCESSED BY CHILD FUNCTION FROM PARENT FUNCTION                    
         }
 
         document.getElementById("orange").onclick = clickHandler("orange")
