@@ -1,10 +1,14 @@
 let name="Tabrez "  //One way of initializing string
 
-const gameName = new String ('BGMI-India')  //Another Way of initializing string
+//specifying data type after new keyword will assure in console that what data type it is
+
+const gameName = new String ('BGMI-India')  //Another Way of initializing string        
+
+
 console.log(gameName)
 console.log(gameName[0])
-console.log(gameName.__proto__)
-console.log(gameName.length)
+console.log(gameName.__proto__)         //this will return an object of prototypes
+console.log(gameName.length)                    
 console.log(gameName.toLowerCase())
 console.log(gameName.charAt(3))
 console.log(gameName.indexOf("I"))
