@@ -1,1 +1,1 @@
-console.log("Tabrez");
+console.log("Tabrez");          //Basic Syntax to print any message in console
