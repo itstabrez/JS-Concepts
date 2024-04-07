@@ -1,6 +1,6 @@
 const myNum = [5 , 6 , 7 , 8 , 9 , 10];
 
-// -------------> PERFORMING OPERATION AND RETURNING VALUES WHILE USING LOOP BUT NOT LOOP FOR EACH PROPERTY ------------->
+// -------------> PERFORMING OPERATION AND RETURNING VALUES WHILE NOT USING LOOP FOR EACH PROPERTY ------------->
 // const temp = myNum.filter((value) => {              //EXPLICIT RETURN WHEN OPENING CURLY BRACES {}
 //     return value > 7;
 // })
