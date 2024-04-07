@@ -4,8 +4,8 @@ const arrayTwo = ["Hacker" , "Foolish" , "Consumer"];
 // arrayOne.push(arrayTwo)
 // console.log(arrayOne);
 
-// console.log(arrayOne[3]); //After addition of two arrays first array treat whole second array as a single array element 
-// console.log(arrayOne[3][2]); 
+// console.log(arrayOne[2]); //After addition of two arrays first array treat whole second array as a single array element 
+// console.log(arrayOne[2][1]); 
 
 // let allArray = arrayOne.concat(arrayTwo)   //This will return new array and after concatination each element is concatinated as new elements
 
