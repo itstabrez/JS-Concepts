@@ -16,7 +16,7 @@ let playGame = true;
 if (playGame) {
   submit.addEventListener("click", (event) => {
     event.preventDefault();
-    const guess = parseInt(userInput.value);
+    const guess = parseInt(userInput.value);      
     validate(guess);
   });
 }
@@ -87,3 +87,4 @@ function newGame() {
         playGame = true;
     })
 }
+// In above Codes we divided each small task to specific functions
