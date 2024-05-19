@@ -1,45 +1,43 @@
-.container {
-  width: 575px;
-  height: 825px;
-
-  background-color: #797978;
-  padding-left: 30px;
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-#height,
-#weight {
-  width: 150px;
-  height: 25px;
-  margin-top: 30px;
+h1{
+    margin: 15px;
+    padding: 10px;
 }
-
-#weight-guide {
-  margin-left: 75px;
-  margin-top: 25px;
+#main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-#results {
-  font-size: 35px;
-  margin-left: 90px;
-  margin-top: 20px;
-  color: rgb(241, 241, 241);
+#inputText{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
-
-button {
-  width: 150px;
-  height: 35px;
-  margin-left: 90px;
-  margin-top: 25px;
-  background-color: #fff;
-  padding: 1px 30px;
-  border-radius: 8px;
-  color: #212121;
-  text-decoration: none;
-  border: 2px solid #212121;
-
-  font-size: 25px;
+#button{
+    font-size: 20px;
+    height: 2vw;
+    width: 5vw;
+    padding: 0.6%;
 }
-
-h1 {
-  padding-left: 15px;
-  padding-top: 25px;
+#buttons{
+    align-self: center;
+}
+#result{
+    font-size: 2vw;
+    text-align: center;
+    color: red;
+}
+#reset{
+    margin: 20px;
+    padding: 0.6%;
+    font-size: 20px;
+    height: 2vw;
+    width: 5vw;
 }
