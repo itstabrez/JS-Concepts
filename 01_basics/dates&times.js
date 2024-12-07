@@ -1,30 +1,43 @@
 // DATE
-let myDate = new Date()
-console.log(myDate);
+// let myDate = new Date()
+// console.log(myDate);
 
-console.log(myDate.toString());
-console.log(myDate.toDateString());
-console.log(myDate.toLocaleString());
+// console.log(myDate.toString());
+// console.log(myDate.toDateString());
+// console.log(myDate.toLocaleString());
+
 // DATE TYPE IS OBJECT
 
-let myCreatedDate = new Date(2023,0,23)
+//Month Starts from 0 and end at 11
 
-console.log(myCreatedDate.toString());
-console.log(myCreatedDate.toLocaleString());
+// let myCreatedDate = new Date(2023,0,23) 
+// console.log(myCreatedDate.toString());
+// console.log(myCreatedDate.toLocaleString());
 
-let myNewCreatedDate = new Date("2023-01-14")   //YY-MM-DD
-console.log(myNewCreatedDate.toLocaleString()); 
+//YY-MM-DD
 
-let myTimeStamp = Date.now()   //
-console.log(myTimeStamp); //IT WILL GIVE US TIME IN MILISECONDS
-console.log(myNewCreatedDate.getTime()); // WILL ALSO GIVE US TIME IN MILISECONDS
+let myNewCreatedDate = new Date("2024-12-07")   
+// console.log(myNewCreatedDate.toLocaleString()); 
 
-console.log(Math.floor(myNewCreatedDate/1000)); //IT WILL GIVE US TIME IN SECONDS 
+let myTimeStamp = Date.now()   
 
+//IT WILL GIVE US TIME IN MILISECONDS
+// console.log(myTimeStamp); 
 
-console.log(myDate.getMonth()  + 1);  //IT WILL GIVE US CURRENT MONTH 
+// WILL ALSO GIVE US TIME IN MILISECONDS
+// console.log(myNewCreatedDate.getTime()); 
+
+//IT WILL GIVE US TIME IN SECONDS 
+// console.log(Math.floor(myNewCreatedDate/1000));
+
+//IT WILL GIVE US CURRENT MONTH     
+// console.log(myNewCreatedDate.getMonth()  + 1);  
 
 let newDate = new Date()
+
+console.log(newDate);
+ // CAN CUSTOMIZE DATE AND TIME ACCORDINGLY
 console.log(newDate.toLocaleString('default',{
-    weekday: "long"
-}));            // CAN CUSTOMIZE DATE AND TIME ACCORDINGLY
+    weekday: "long",
+    day : "2-digit",
+}));           
