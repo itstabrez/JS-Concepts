@@ -1,10 +1,13 @@
 const course = {
     name: "Advance JS",
     price: 198,
-    courseInstructor: "Students"
+    courseInstructor: "Tabrezzzz"
 }
 
 console.log(course.courseInstructor);   //This is very big name to access objects let's simplify this 
+
+const {name : n} = course;
+console.log(n);
 
 const {courseInstructor: teacher} = course;
 
