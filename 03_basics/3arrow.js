@@ -46,5 +46,14 @@ console.log(objectReturn(4 , 6));
 
 ((name) => {
     console.log(` ${name} Instant Execution`);
-})("Tabrez");
+})("Hello Tabrez");
 
+
+
+
+//Arrow IIFE Function 
+
+((num1 , num2) => {
+    const sum = num1 + num2;
+    console.log(`Executed ${num1} + ${num2} = ${sum}`);
+})(1,8);

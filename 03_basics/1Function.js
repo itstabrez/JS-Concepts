@@ -22,7 +22,7 @@ const result = addTwoNum(4,8);
 
 console.log(result);
 
-function userLoginMessage(username = 'Hola'){
+function userLoginMessage(username = 'You'){
     if(!username){
         console.log("Please Enter a username");
         return;

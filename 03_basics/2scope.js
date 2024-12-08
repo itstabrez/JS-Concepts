@@ -6,7 +6,7 @@ const b = 7;
 var c = 50;
 console.log(" INSIDE IF BLOCK " , a);
 }
-
+ 
 console.log(a);
 
 // console.log(a);      //THIS WILL NOT PRINT AS SCOPE IS LIMITED TO THE IF BLOCK
@@ -19,7 +19,7 @@ function one() {
     const username = "Tabrez"           //CHILD FUNCTION CAN ACCESS PARENT FUNCTION VARIABLE
     function two() {                    //PARENT FUNCTION CAN'T ACCESS CHILD FUNCTION VARIABLE
         const website = "yt.com";
-        console.log(username);
+        console.log(`${username}${website} Inside Fun 2`);
     }
     // console.log(website);
     two();
@@ -47,7 +47,7 @@ function addOne(num) {
     return num + 1;
 }
 
-
+ 
 const addTwo = function(num) {
     return num + 2;
 }
