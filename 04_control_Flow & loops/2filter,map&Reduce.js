@@ -12,14 +12,14 @@ const myNum = [5 , 6 , 7 , 8 , 9 , 10];
 
 // ---------------> PERFORMING OPERATION AND RETURNING VALUES WHILE USING LOOP FOR EACH PROPERTY ---------------->
 
-// const newNums = [];
+const newNums = [];
 
-// myNum.forEach((num) => {
-//     if (num > 6) {
-//         newNums.push(num) 
-//     }
-// })
-// console.log(newNums);
+myNum.forEach((num) => {
+    if (num > 6) {
+        newNums.push(num) 
+    }
+})
+console.log(newNums);
 
 // -----------> PERFORMING MORE FILTER OPERATIONS ---------->
 
@@ -48,11 +48,11 @@ console.log(numbers);
 //=====================CHAINING===================
 
 const myNums2 = [1 , 2 , 3 , 4 , 5];
-const myChanedNums = myNums2.map((num) => num * 2)
+const myChainedNums = myNums2.map((num) => num * 2)
 .map((num) => num + 1)
 .filter((num) => num > 3 )
 
-console.log(myChanedNums);
+console.log(myChainedNums);
 
 // ======================REDUCE=======================
 
