@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button{
+    margin: 0 5px; 
+    padding: 10px 20px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#grey{
+    background-color: grey;
+    border: 1px solid black;
+}
+
+#yellow{
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+#green{
+    background-color: green;
+    border: 1px solid black;
+}
+
+#black{
+    background-color: black;
+    border: 1px solid black;
+}
+
